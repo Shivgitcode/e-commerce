@@ -21,10 +21,14 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="w-[70%] px-5 mx-auto font-mont text-sm">
           <Navbar></Navbar>
-          <div className="flex">
+          <div className="flex mt-[50px]">
             <Sidebar></Sidebar>
 
-            {children}
+            <div className="w-full">
+              {children}
+
+
+            </div>
           </div>
 
 
