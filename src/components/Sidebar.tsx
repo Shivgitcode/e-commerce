@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 export default function Sidebar() {
     const categories = [
@@ -16,7 +17,10 @@ export default function Sidebar() {
                 {
                     categories.map(category => (
                         <div className="py-[18px]">
-                            <li className="flex gap-1 items-center text-sm font-medium"><span className=" mr-4">{category.tag}</span>{category.name} </li>
+                            <Link href={category.name === "New In" ? "/" : `/category/${category.name}`}>
+                                <li className="flex gap-1 items-center text-sm font-medium"><span className=" mr-4">{category.tag}</span>{category.name} </li>
+
+                            </Link>
 
 
                         </div>

@@ -1,4 +1,4 @@
-import New from '@/components/New'
+import New from '@/components/new/New'
 import React from 'react'
 
 export default function Home() {
