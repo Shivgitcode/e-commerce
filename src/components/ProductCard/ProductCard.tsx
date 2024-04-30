@@ -1,6 +1,7 @@
 import { Product } from "@/utils";
 import Image from "next/image";
 import { CiHeart } from "react-icons/ci";
+import { img1 } from "../../../public";
 
 export default function ProductCard({ product }: { product: Product }) {
     return (

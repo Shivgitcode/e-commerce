@@ -4,11 +4,17 @@ export interface Product {
     img: any
     Brand: string
     name: string
-    discount: number
+    discount?: number
     mrp: number
     sale: number
 
 
+}
+
+export interface Category {
+    id: number,
+    name: string,
+    tag: any
 }
 
 export const products: Product[] = [
@@ -61,3 +67,15 @@ export const products: Product[] = [
 
 
 ]
+
+
+export const categories: Category[] = [
+    { id: 1, name: "New In", tag: "⚡" },
+    { id: 2, name: "Clothing", tag: "👚" },
+    { id: 3, name: "shoes", tag: "👠" },
+    { id: 4, name: "Accessories", tag: "👜" },
+    { id: 5, name: "Activewear", tag: "🤸" },
+    { id: 6, name: "Gifts&Living", tag: "🎁" },
+    { id: 7, name: "Inspiration", tag: "💎" }
+]
+

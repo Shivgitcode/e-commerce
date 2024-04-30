@@ -1,8 +1,8 @@
 import { MdOutlineSort } from "react-icons/md"
-export default function Bar() {
+export default function Bar({ name, tag }: { name: string, tag: any }) {
     return (
         <section className="flex w-full justify-between items-center mb-10">
-            <h2 className="font-bold text-[28px]">⚡ New In</h2>
+            <h2 className="font-bold text-[28px]">{tag}{" "}{name}</h2>
             <div className="flex items-center gap-5">
                 <button className="flex items-center px-[18px] py-[10px] border-[2px] border-gray-300 rounded-[10px] flex-1">
                     <MdOutlineSort fontSize={22}></MdOutlineSort>
